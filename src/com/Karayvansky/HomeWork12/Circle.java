@@ -1,21 +1,10 @@
 package com.Karayvansky.HomeWork12;
 
-public class Circle extends Shape {
-	private int radius;
-
-	Circle(int radius) {
-		this.radius = radius;
-	}
-
-	public double getArea() {
-		return Math.PI * Math.pow(radius, 2);
-	}
-
-	public double getPerimeter() {
-		return 2 * Math.PI * radius;
-	}
-
-	public void print() {
-		System.out.println("The circle with a radius: " + radius);
+public class Circle extends Figure {
+	Circle(String name, String color, int area, int perimetr) {
+		setName(name);
+		setColor(color);
+		setArea(area);
+		setPerimetr(perimetr);
 	}
 }
